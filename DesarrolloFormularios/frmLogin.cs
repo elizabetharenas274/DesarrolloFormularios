@@ -19,7 +19,7 @@ namespace DesarrolloFormularios
         {
             frmPrincipal principal = new frmPrincipal();
             principal.Show();
-            this.Hide();
+           
         }
 
         private void frmLogin_Load(object sender, EventArgs e)
