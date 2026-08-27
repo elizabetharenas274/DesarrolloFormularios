@@ -33,6 +33,7 @@
             txtUsuario = new TextBox();
             txtContrasena = new TextBox();
             btnIngresar = new Button();
+            btnSalir = new Button();
             SuspendLayout();
             // 
             // lblUsuario
@@ -69,7 +70,7 @@
             // 
             // btnIngresar
             // 
-            btnIngresar.Location = new Point(233, 163);
+            btnIngresar.Location = new Point(188, 165);
             btnIngresar.Name = "btnIngresar";
             btnIngresar.Size = new Size(75, 23);
             btnIngresar.TabIndex = 4;
@@ -77,11 +78,22 @@
             btnIngresar.UseVisualStyleBackColor = true;
             btnIngresar.Click += btnIngresar_Click;
             // 
+            // btnSalir
+            // 
+            btnSalir.Location = new Point(286, 165);
+            btnSalir.Name = "btnSalir";
+            btnSalir.Size = new Size(75, 23);
+            btnSalir.TabIndex = 5;
+            btnSalir.Text = "Salir";
+            btnSalir.UseVisualStyleBackColor = true;
+            btnSalir.Click += btnSalir_Click;
+            // 
             // frmLogin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(534, 234);
+            Controls.Add(btnSalir);
             Controls.Add(btnIngresar);
             Controls.Add(txtContrasena);
             Controls.Add(txtUsuario);
@@ -103,5 +115,6 @@
         private TextBox txtUsuario;
         private TextBox txtContrasena;
         private Button btnIngresar;
+        private Button btnSalir;
     }
 }
